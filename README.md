@@ -12,7 +12,7 @@ You're working a on a large codebase with a lot of directories and similar file 
 
 Being able to search files adjecent to the one you're currently working on. In the example shown below i can just search for "scss" instead of the file name.
 
-![alt text](/example.pn/example.pngg)
+![alt text](example.png)
 
 --- 
 

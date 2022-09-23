@@ -6,7 +6,7 @@ A tiny telescope extension to find files in the same directory as the current bu
 
 ## The problem
 
-You're working a on a large codebase with a lot of directories and similar file names. Usually you're working on components or modules for an extended period. You want to quickly be able to find the relevant associated files. But also be able to jump into another component without having to manage some sort of bookmarks.
+You're working a on a large codebase with a lot of directories and similar file names. Usually you're working on components or modules for an extended period. You want to quickly be able to find the relevant associated files. But also be able to jump into another component and having the same utility without having to manage some sort of bookmark system.
 
 ## The solution
 
@@ -24,7 +24,7 @@ Being able to search files adjecent to the one you're currently working on. In t
 ```lua
 ...
 use({ "MaximilianLloyd/adjacent.nvim" })
-..
+...
 
 ```
 
@@ -33,6 +33,15 @@ use({ "MaximilianLloyd/adjacent.nvim" })
 telescope.load_extension("adjacent")
 ```
 
+### Running
+It can be run by using `Telescope adjacent`.
+
+Then you can map to a key 
+```lua
+vim.keymap.set("n", "<leader>fa", "<cmd>Telescope adjacent<CR>", { noremap = true, silent = false })
+```
+
 
 ### Todo
-- [] Send adjacent files to quickfix list
+- [] Ignoring directories
+- [] Be able to send adjacent files to quickfix list

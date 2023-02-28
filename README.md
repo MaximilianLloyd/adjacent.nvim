@@ -33,6 +33,15 @@ use({ "MaximilianLloyd/adjacent.nvim" })
 telescope.load_extension("adjacent")
 ```
 
+### Configure search level
+```lua
+	extensions = {
+		adjacent = {
+			level = 1 -- default
+		}
+	},
+```
+
 ### Running
 It can be run by using `Telescope adjacent`.
 
